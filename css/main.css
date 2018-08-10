@@ -141,7 +141,7 @@ html{
 }
 canvas{
     display:block;
-    vertical-align:bottom;
+    vertical-align : bottom;
 }  
 /*header styling*/
 #header{
@@ -201,7 +201,7 @@ li{
     list-style-type: none;
 }
 .nav.nav-tabs{
-    width:36%;
+    width:550px;
     margin:8px auto;
 }
 .nav-item a{
@@ -217,6 +217,7 @@ a{
 }
 .tabMenu .nav-tabs li{
     margin-bottom: 0;
+    width:135px;
 }
 .tabMenu .nav-tabs li a{
     display: block;
@@ -234,7 +235,7 @@ a{
 .tabMenu .nav-tabs li.active a,
 .tabMenu .nav-tabs li a:hover,
 .nav-tabs .nav-link.active{
-    background: rgb(182, 12, 97);
+    background: rgb(37, 37, 37);
     color: #fff;
     border: none;
     opacity: 0.8;
@@ -262,97 +263,23 @@ a{
     padding-top:70px;
     padding-bottom:70px;
 }
-@media only screen and (max-width: 479px){
-    .tab .nav-tabs li{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    .tab .nav-tabs li:last-child{
-        margin-bottom: 0;
-    }
+.tab-icon{
+    width:100px;
+    height:100px;
 }
-@media screen and (max-width:1300px){
-    .myPic{
-        margin-right: 50px;
-    }
-    .intro{
-        margin-left: 50px;
-        
-    }
-    .nav.nav-tabs{
-        width:40%;
-    }
+.tab-icon img{
+    max-width:100%;
+    max-height:100%;
+    position:relative;
 }
-@media screen and (max-width:1100px){
-    .header{
-        height:620px;
-    }
-    .nav.nav-tabs{
-        width:50%;
-    }
-    .myPic {
-        margin:0px auto;
-        float:none;
-        width:250px;
-        height:350px;
-    }
-    .intro{
-        margin:40px auto;
-        max-width:90%;
-        font-size:1.5em;
-        text-align:center;
-        float:none;
-    } 
-}
-
-@media screen and (max-width:500px){
-    .myPic {
-        width:200px;
-        height:250px;
-        margin:0px auto;
-    }
-    .myPic img{
-        margin-top: 20px;
-        
-    }
-    .intro{
-        font-size:1em;
-        margin:15px auto;
-        text-align:center;
-        width:100%;
-        float:none;
-        padding-top: 20px; 
-    }
-    .header{
-        width:100%;
-        margin:0;
-        height:500px;
-    }
-    .tabMenu{
-        width:100%;
-        margin:0;
-        height:160px;
-    }
-    .nav.nav-tabs{
-        width:70%;
-        font-weight:100;
-        text-align:center;
-        display: block;
-    }
-    .nav-tabs .nav-item{
-        display: block;
-    }
-    .tabMenu .nav-tabs li a{
-        padding: 5px 20px;
-    }
-}
-
 /*Contact Form Styles*/
+#contact{
+    background-color: rgb(249,249,249)
+}
 .contact-text{
     
     margin-right:25px;
-    margin-top:100px;
+    margin-top:50px;
 }
 .bg{
     padding-right: 30px;
@@ -404,29 +331,16 @@ a{
     padding: 110px 130px 157px 148px;
   }
   
-  /*------------------------------------------------------------------
-  [  ]*/
-  .contact-pic {
-    width: 310px;
-    padding-top: 55px;
-  }
-  
-  .contact-pic img {
-    max-width: 100%;
-  }
-  
-  
-  /*------------------------------------------------------------------
-  [  ]*/
+ 
   .contact-form {
     margin-left:30px;
   }
   
   .contact-form-title {
-   font-family:'Eczar', serif;
+    font-family:'Eczar', serif;
     line-height: 1.2;
     text-align: left;
-    padding-bottom: 36px;
+    padding-bottom: 15px;
   }
   
   input.input100 {
@@ -444,7 +358,9 @@ a{
     border-radius: 25px;
     padding: 14px 30px;
   }
-  
+  .socials{
+      padding-top:10px;
+  }
   /*---------------------------------------------*/
   .wrap-input100 {
     position: relative;
@@ -456,11 +372,13 @@ a{
   .input100 {
     display: block;
     width: 100%;
-    background: #e6e6e6;
-    font-family:'Eczar', serif;
+    background: #f0ebeb;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #666666;
+    border:none;
+    outline:none;
   }
   
   
@@ -477,6 +395,7 @@ a{
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
     color: #00aae6;
+    outline:none;
   }
   
   .input100:focus + .focus-input100 {
@@ -531,6 +450,7 @@ a{
   [ Button ]*/
   .container-contact-form-btn {
     width: 100%;
+    margin:5px auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -539,6 +459,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
+    border:none;
+    outline:none;
   }
   
   .contact-form-btn {
@@ -546,7 +468,7 @@ a{
     height: 50px;
     border-radius: 25px;
     background:#00aae6;
-    font-family:'Eczar', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
@@ -558,6 +480,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 0 25px;
+    border:none;
   
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -567,53 +490,6 @@ a{
   
   .contact-form-btn:hover {
     background: #333333;
-  }
-  
-  /*------------------------------------------------------------------
-  [ Responsive ]*/
-  
-  @media (max-width: 1200px) {
-    .contact-pic {
-      width: 33.5%;
-    }
-  
-    .contact-form {
-      width: 44%;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .wrap-contact {
-      padding: 110px 80px 157px 90px;
-    }
-  
-    .contact-pic {
-      width: 35%;
-    }
-  
-    .contact-form {
-      width: 55%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .wrap-contact {
-      padding: 110px 80px 157px 80px;
-    }
-  
-    .contact-pic {
-      display: none;
-    }
-  
-    .contact-form {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .wrap-contact {
-      padding: 110px 15px 157px 15px;
-    }
   }
   
   
@@ -640,16 +516,13 @@ a{
     transform: translateY(-50%);
     right: 8px;
     pointer-events: none;
-  
-    font-family: Montserrat-Medium;
+    font-family: 'Montserrat', sans-serif;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;
     text-align: left;
-  
     visibility: hidden;
     opacity: 0;
-  
     -webkit-transition: opacity 0.4s;
     -o-transition: opacity 0.4s;
     -moz-transition: opacity 0.4s;
@@ -657,8 +530,8 @@ a{
   }
   
   .alert-validate::after {
-    content: "\f06a";
-    font-family: FontAwesome;
+    content: "¡";
+    font-family: 'Montserrat', sans-serif;
     display: block;
     position: absolute;
     color: #c80000;
@@ -676,7 +549,9 @@ a{
     visibility: visible;
     opacity: 1;
   }
-  
+ 
+/*Resonsive*/ 
+
   @media (max-width: 992px) {
     .alert-validate::before {
       visibility: visible;
@@ -684,7 +559,117 @@ a{
     }
   }
 
+  @media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .tab .nav-tabs li:last-child{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:1300px){
+    .myPic{
+        margin-right: 50px;
+    }
+    .intro{
+        margin-left: 50px;
+        
+    }
+   
+}
+@media screen and (max-width:1100px){
+    .header{
+        height:620px;
+    }
+    
+    .myPic {
+        margin:0px auto;
+        float:none;
+        width:250px;
+        height:350px;
+    }
+    .intro{
+        margin:40px auto;
+        max-width:90%;
+        font-size:1.5em;
+        text-align:center;
+        float:none;
+    } 
+}
 
+@media screen and (max-width:500px){
+    .myPic {
+        width:200px;
+        height:250px;
+        margin:0px auto;
+    }
+    .myPic img{
+        margin-top: 20px;
+        
+    }
+    .intro{
+        font-size:1em;
+        margin:15px auto;
+        text-align:center;
+        width:100%;
+        float:none;
+        padding-top: 20px; 
+    }
+    .header{
+        width:100%;
+        margin:0;
+        height:500px;
+    }
+    .tabMenu{
+        width:100%;
+        margin:0;
+        height:190px;
+    }
+    .nav.nav-tabs{
+        width:70%;
+        font-weight:100;
+        text-align:center;
+        display: block;
+    }
+    .tabMenu .nav-tabs li{
+        width:100%;
+        margin-top: 5px;
+    }
+    .tabMenu .nav-tabs li a{
+        font-size:20px;
+        font-weight:normal;
+    }
+    .nav-tabs .nav-item{
+        display: block;
+    }
+    .tabMenu .nav-tabs li a{
+        padding: 5px 20px;
+    }
+    
+    .contact-text h3{
+        font-size:25px;
+    }
+    
+}
+@media screen and (max-width:770px){
+    .contact-text{
+        margin-top: 50px;
+        margin-right:0;
+        
+    }
+    .tab-icon{
+        margin:0 auto;
+    }
+    .contact-form-title{
+        margin-top: 30px;
+        
+    }
+    .contact-form{
+        margin-left:0; 
+    }
+}
 
 
 
