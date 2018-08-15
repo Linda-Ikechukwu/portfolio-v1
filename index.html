@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -5,13 +6,17 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Linda Ikechukwu - Frontend Web Developer</title>
-  <meta name="description" content="Offical Site of Linda Ikechukwu, A Frontend Web Developer based in Port Harcourt, Nigeria">
+  <meta name="description" content="Offical Site of Linda Ikechukwu, A Female Web Developer based in Port Harcourt, Nigeria">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <link rel="manifest" href="assets/site.webmanifest">
   <link rel="apple-touch-icon" href="assets/icon.jpg">
   <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-4.0.0/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -23,21 +28,156 @@
   <![endif]-->
    <div class="main">
       <!--Header-->
-      <section>
-        <div class="  header">
-          <!--<div class="">-->
-            <div class="myPic ">
-              <img class="img-responsive " src="img/mypic.png">
+      <section id = "header">
+        <div >
+            <div  id="particles-js" class="  header">
+                <div class="h-content">
+                  <div class="myPic ">
+                    <img class="img-responsive " src="img/mypic.png" alt="Linda Ikechukwu">
+                  </div>
+                  <div class="intro">
+                    <h1 class="hello"></h1>
+                  </div>
+                </div>
+            </div> 
+            
+            <div class="tabMenu" role="tabpanel">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="About" aria-selected="true"><i class="fas fa-user-circle"></i>About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="Portfolio" aria-selected="false"><i class="fas fa-graduation-cap"></i>Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="Work" aria-selected="false"><i class="fas fa-briefcase"></i>Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="Contact" aria-selected="false"><i class="fas fa-comment-alt"></i>Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="intro">
-              <h1 class="hello"></h1>
+        </div>
+        
+      </section>  
+          
+         
+          
+            
+         
+         
+        
+      
+      <!--Header End-->
+      
+      
+
+      <!--Page Content Starts Here-->
+      <section class="content">
+        <div class="tab-content">
+          <!--About Me section-->
+          <div class="tab-pane active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="container">
+              <div class="tab-icon animated bounceInDown">
+                <img src="img/about-me.png">
+              </div>
+            </div> 
+          </div>
+          <!--End of About-->
+
+          <!--Portfolio-->
+          <div class="tab-pane animated slideInRight" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+            <div class="container">
+              <div class="tab-icon animated bounceInDown">
+                <img src="img/portfolio.png">
+              </div>
+            </div> 
+          </div>
+          <!--End Of Portfolio-->
+
+          <!--Work-->
+          <div class="tab-pane animated slideInRight" id="work" role="tabpanel" aria-labelledby="work-tab">
+            <div class="container">
+              <div class="tab-icon animated bounceInDown">
+                <img src="img/work.png">
+              </div>
+            </div> 
+          </div>
+          <!--End of Home-->
+
+          <!--Contact-->
+          <div class="tab-pane animated slideInRight" id="contact" role="tabpanel" aria-labelledby="contact-tab " title="Contact Linda Ikechukwu">
+            <div class="container">
+              <div class="tab-icon animated bounceInDown">
+                <img src="img/hi.png">
+              </div>
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="contact-text js-tilt" data-tilt>
+                    <h3>I'm  <span class="strong pink">Friendly </span> , <span class="strong purple"> Focused </span> and would <span class="strong red">Love</span> to hear from 
+                      <span class="strong black"> You</span> regarding <span class="strong yellow ">Work </span>,
+                       <span class="strong  lemon">Collaborations</span>, <span class="strong mine"> Volunteering </span> and any other
+                        random <span class="strong peru">Tech</span> related ish 😉
+                    </h3>
+                    <h3 class="socials">Find me on: 
+                        <a class="mine" href="https://twitter.com/Bad__Geek"><i class="fab fa-twitter-square"></i></a>
+                        <a class="black" href="https://medium.com/@lindaikechukwu"><i class="fab fa-medium"></i></a>
+                        <a class="blue" href="https://www.linkedin.com/in/linda-ikechukwu-91a140154/"><i class="fab fa-linkedin"></i></a>
+                        <a class="black" href="https://github.com/Linda-Ikechukwu"><i class="fab fa-github-square"></i></a>
+                    </h3>
+                  </div>
+                </div>  
+                <div class="col-md-6 ">
+                  
+                  <form class="contact-form validate-form" method="POST" action="https://formspree.io/lindaedwin96@gmail.com">
+                    <h2 class="contact-form-title "> 
+                      Leave me a Message
+                    </h2>
+          
+                    <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                      <input class="input100" type="text" name="contact_name" placeholder="Name" >
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </span>
+                    </div>
+          
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                      <input class="input100" type="text" name="contact_email" placeholder="Email">
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </span>
+                    </div>
+          
+                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                      <textarea class="input100" name="contact_message" placeholder="Message"></textarea>
+                      <span class="focus-input100"></span>
+                    </div>
+          
+                    <div class="container-contact-form-btn">
+                      <button class="contact-form-btn">
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                  
+                
+              </div>
             </div>
-          <!--</div>-->  
+                  
+          </div>
+          <!--End Of Contact-->
         </div>
       </section>
-      <!--Header End-->
+      <!--End of Page Content-->
+
    </div>
  
+
+
+
 
 
 
@@ -53,10 +193,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  <script src="js/plugins.js"></script>
+  <script src="css/bootstrap-4.0.0/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="js/vendor/tilt.jquery.min.js" ></script> 
+   
+    
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
