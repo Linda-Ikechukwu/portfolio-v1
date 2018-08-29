@@ -1,14 +1,4 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
    html {
     color: #222;
@@ -19,11 +9,7 @@
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
+ 
  */
 
 ::-moz-selection {
@@ -143,10 +129,47 @@ canvas{
     display:block;
     vertical-align : bottom;
 }  
+
+/*General Class names*/
+.tab-pane{
+    width:98%;
+    height:100%;
+    margin-top:12px;
+    margin-bottom:12px;
+    margin-left:1%;
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+    -webkit-box-shadow: 0 0 1em black;
+    -moz-box-shadow: 0 0 1em black;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+.tab-icon{
+    width:100px;
+    height:100px;
+}
+.tab-icon img{
+    max-width:100%;
+    max-height:100%;
+    position:relative;
+}
+.description{
+    text-align:justify;
+    line-height:1.5em;
+    margin-top: 20px;
+}
+.textlink{
+    text-decoration: underline;
+}
+.textlink:hover{
+    color:peru;
+}
+/*End of general class names*/
+
 /*header styling*/
 #header{
     margin-top:0;
-
+    
 }
 .header{
     background-color: #00aae6;
@@ -156,6 +179,7 @@ canvas{
     margin-left:1%;
     border-radius: 5px 5px 0px 0px;
     margin-bottom:0px;
+    
 }
 
 .myPic{
@@ -182,6 +206,7 @@ canvas{
     position:relative;
     float:left;
 }
+/*End Of Header Styling*/
 
 /*tab menu styling*/
 .tabMenu{
@@ -195,6 +220,8 @@ canvas{
     color:white;
     opacity:0.8;
     border-top:1px solid white;
+    
+    
     
 }
 li{
@@ -252,29 +279,12 @@ a{
 .nav-link i{
     margin-right:5px;
 }
-.tab-pane{
-    width:98%;
-    height:100%;
-    margin-top:12px;
-    margin-bottom:12px;
-    margin-left:1%;
-    border-radius: 5px;
-    box-shadow: 0 0 1em black;
-    padding-top:70px;
-    padding-bottom:70px;
-}
-.tab-icon{
-    width:100px;
-    height:100px;
-}
-.tab-icon img{
-    max-width:100%;
-    max-height:100%;
-    position:relative;
-}
+
+/*End of Tab Menu styling*/
+
 /*Contact Form Styles*/
 #contact{
-    background-color: rgb(249,249,249)
+    
 }
 .contact-text{
     
@@ -380,8 +390,6 @@ a{
     border:none;
     outline:none;
   }
-  
-  
   /*------------------------------------------------------------------
   [ Focus ]*/
   .focus-input100 {
@@ -549,7 +557,9 @@ a{
     visibility: visible;
     opacity: 1;
   }
- 
+ /*End of contact styles*/
+  
+  
 /*Resonsive*/ 
 
   @media (max-width: 992px) {
