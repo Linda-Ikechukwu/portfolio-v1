@@ -161,6 +161,7 @@ canvas{
 }
 .textlink{
     text-decoration: underline;
+    color:#e60099;
 }
 .textlink:hover{
     color:peru;
@@ -173,7 +174,7 @@ canvas{
     
 }
 .header{
-    background-color: #00aae6;
+    background-color: #e60099;
     width: 98%;
     height:500px;
     margin-top:12px;
@@ -212,7 +213,7 @@ canvas{
 /*tab menu styling*/
 .tabMenu{
     width: 98%;
-    background-color: #00aae6;
+    background-color: #f162c2;
     margin-top:0;
     margin-left:1%;
     border-radius: 0px 0px 5px 5px;
@@ -283,6 +284,21 @@ a{
 
 /*End of Tab Menu styling*/
 
+/*Portfolio Page Styling*/
+ .div-content img{
+     width:100px;
+     height:100px;
+     display: block;
+     margin: 30px auto;
+ }
+.div-header{
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 50px;
+} 
+
+/* End Portfolio Page Styling*/
+
 /*Contact Form Styles*/
 #contact{
     
@@ -323,7 +339,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #00aae6;
+    background: #e60099;
   }
   
   .wrap-contact {
@@ -347,10 +363,10 @@ a{
     margin-left:30px;
   }
   
-  .contact-form-title {
+  .title {
     font-family:'Eczar', serif;
     line-height: 1.2;
-    text-align: left;
+    font-weight: bold;
     padding-bottom: 15px;
   }
   
@@ -403,7 +419,7 @@ a{
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: #00aae6;
+    color: #e60099;
     outline:none;
   }
   
@@ -451,7 +467,7 @@ a{
   }
   
   .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #00aae6;
+    color: #e60099;
     padding-left: 22px;
   }
   
@@ -476,7 +492,7 @@ a{
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background:#00aae6;
+    background:#e60099;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
@@ -767,22 +783,6 @@ a{
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
@@ -791,6 +791,12 @@ a{
    ========================================================================== */
 
 @media print {
+
+    -webkit-min-device-pixel-ratio: 1.25;
+    min-resolution: 1.25dppx;
+    min-resolution: 120dpi ;
+    /* Style adjustments for high resolution devices */
+
     *,
     *:before,
     *:after {
